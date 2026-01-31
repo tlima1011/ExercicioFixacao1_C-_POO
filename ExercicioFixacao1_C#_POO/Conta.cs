@@ -36,6 +36,7 @@ namespace ExercicioFixacao1_POO
             }
             else
             {
+                v += 5.0;
                 Saldo -= v;
             }
                 
