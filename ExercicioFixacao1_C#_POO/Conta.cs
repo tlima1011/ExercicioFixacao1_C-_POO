@@ -18,12 +18,27 @@ namespace ExercicioFixacao1_POO
 
         public void depositar(double v)
         {
-            Saldo += v;
+            if (v <= 0.0)
+            {
+                Console.WriteLine("Inválido, valor de saque não pode ser menor ou igual 0.0");
+            }
+            else
+            {
+                Saldo += v;
+            }
         }
 
         public void sacar(double v)
         {
-            Saldo -= v;
+            if(v <= 0.0)
+            {
+                Console.WriteLine("Inválido, valor de saque não pode ser menor ou igual 0.0");
+            }
+            else
+            {
+                Saldo -= v;
+            }
+                
         }
 
         public override string ToString()
