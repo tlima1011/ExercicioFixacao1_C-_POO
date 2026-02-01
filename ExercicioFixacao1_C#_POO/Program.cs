@@ -21,7 +21,7 @@ namespace ExercicioFixacao1_POO
             
             if(d == 's' || d == 'S')
             {
-                Console.Write("Entre o valor de depósito inicial: ");
+                Console.Write("\nEntre o valor de depósito inicial: ");
                 valor = double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture);
                 c.depositar(valor);
                 Console.WriteLine("\nDados da conta: ");
@@ -36,7 +36,7 @@ namespace ExercicioFixacao1_POO
             Console.Write("Entre um valor para depósito: ");
             valor = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             c.depositar(valor);
-            Console.WriteLine("Dados da conta atualizados:");
+            Console.WriteLine("\nDados da conta atualizados:");
             Console.WriteLine(c);
 
             Console.WriteLine();

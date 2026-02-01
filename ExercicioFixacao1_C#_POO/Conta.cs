@@ -7,13 +7,37 @@ namespace ExercicioFixacao1_POO
     {
         private string _titular;
         private string _numero;
-        public double Saldo;
+        public double Saldo { get; private set; }
 
         public Conta(string titular, string numero)
         {
             _titular = titular;
             _numero = numero;
             Saldo = 0.0; 
+        }
+
+        public string Titular
+        {
+            get { return _titular; }
+            set
+            {
+                if (value != null && value.Length > 1)
+                {
+                    _titular = value;
+                }
+            }
+        }
+
+        public string Numero
+        {
+            get { return _numero; }
+            set
+            {
+                if (value != null && value.Length > 1)
+                {
+                    _numero = value;
+                }
+            }
         }
 
         public void depositar(double v)
