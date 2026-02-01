@@ -5,14 +5,14 @@ namespace ExercicioFixacao1_POO
 {
     internal class Conta
     {
-        public string Titular;
-        public string Numero;
+        private string _titular;
+        private string _numero;
         public double Saldo;
 
         public Conta(string titular, string numero)
         {
-            Titular = titular;
-            Numero = numero;
+            _titular = titular;
+            _numero = numero;
             Saldo = 0.0; 
         }
 
@@ -45,8 +45,8 @@ namespace ExercicioFixacao1_POO
         public override string ToString()
         {
             return "Conta: " 
-                    + Numero 
-                    + ", Titular: " + Titular 
+                    + _numero 
+                    + ", Titular: " + _titular 
                     + ", Saldo: $ " +  Saldo.ToString("F2", CultureInfo.InvariantCulture);
         }
     }
