@@ -69,8 +69,8 @@ namespace ExercicioFixacao1_POO
         public override string ToString()
         {
             return "Conta: " 
-                    + _numero 
-                    + ", Titular: " + _titular 
+                    + Numero 
+                    + ", Titular: " + Titular 
                     + ", Saldo: $ " +  Saldo.ToString("F2", CultureInfo.InvariantCulture);
         }
     }
